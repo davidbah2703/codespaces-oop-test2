@@ -12,8 +12,24 @@ Note: All sides are integers.
 
  using namespace std;
 
-int main() {
+int main()
+{
     cout<<"Part 1"<<endl; //do not remove, edit, or change the placement of this line.
-    
+   
+
+   int sides;
+   double lenght;
+   double perimeter=0.0;
+     cout<<"Enter the number of sides the shape has:";
+     cin>>sides;
+  for(int i=0;i<sides;i++)
+  {
+  cout<<"Enter lenght:";
+  cin>>lenght;
+  perimeter+=lenght;//since the general formula of perimeter is the sum of all sides
+  }
+cout<<"Perimeter:"<<perimeter<<endl;
+
+    return 0;
     return 0;
  }
